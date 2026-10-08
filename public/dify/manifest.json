@@ -1,0 +1,114 @@
+[
+  {
+    "id": "store-script",
+    "name": "探店脚本",
+    "filename": "01-store-script.yml",
+    "environmentKey": "DIFY_KEY_STORE_SCRIPT",
+    "example": {
+      "store_name": "巷口咖啡",
+      "highlights": "社区咖啡店，窗边座位适合阅读；招牌桂花拿铁 28 元；提供外带。地址：青禾路 18 号。",
+      "audience": "周边上班族、喜欢安静空间的年轻人",
+      "duration": "60 秒"
+    }
+  },
+  {
+    "id": "factory-script",
+    "name": "工厂宣传脚本",
+    "filename": "02-factory-script.yml",
+    "environmentKey": "DIFY_KEY_FACTORY_SCRIPT",
+    "example": {
+      "factory_name": "青禾包装厂",
+      "products": "定制纸箱、纸质礼盒",
+      "facts": "流程：设计打样、印刷、模切、粘盒、抽样质检。支持按客户图稿打样；设有独立质检环节。",
+      "audience": "电商品牌采购负责人"
+    }
+  },
+  {
+    "id": "social-copy",
+    "name": "小红书文案",
+    "filename": "03-social-copy.yml",
+    "environmentKey": "DIFY_KEY_SOCIAL_COPY",
+    "example": {
+      "product": "通勤帆布包",
+      "facts": "棉帆布材质，有拉链和内袋，可放 13 英寸电脑；售价 89 元；米白、黑色两款。",
+      "audience": "学生和职场新人",
+      "tone": "实用攻略"
+    }
+  },
+  {
+    "id": "video-topics",
+    "name": "短视频选题",
+    "filename": "04-video-topics.yml",
+    "environmentKey": "DIFY_KEY_VIDEO_TOPICS",
+    "example": {
+      "industry": "社区咖啡店",
+      "audience": "附近上班族",
+      "goal": "吸引到店",
+      "resources": "可拍咖啡制作、店内环境和菜单；员工可出镜；不拍顾客正脸，不编造优惠。"
+    }
+  },
+  {
+    "id": "product-benefits",
+    "name": "商品卖点提炼",
+    "filename": "05-product-benefits.yml",
+    "environmentKey": "DIFY_KEY_PRODUCT_BENEFITS",
+    "example": {
+      "product": "折叠电脑支架",
+      "specs": "铝合金材质；6 档调节；折叠厚度 2 厘米；重 260 克；适配 11–15.6 英寸笔记本。",
+      "needs": "经常带电脑出差，希望支架方便收纳，办公时调整屏幕高度。"
+    }
+  },
+  {
+    "id": "customer-reply",
+    "name": "客服回复助手",
+    "filename": "06-customer-reply.yml",
+    "environmentKey": "DIFY_KEY_CUSTOMER_REPLY",
+    "example": {
+      "question": "包裹到了，但颜色不是我下单选的，怎么办？",
+      "policy": "已确认订单为黑色，客户提供照片为米白色。发错货支持换货，商家承担运费；换货安排需要客服核实库存。",
+      "tone": "友好简洁"
+    }
+  },
+  {
+    "id": "sales-followup",
+    "name": "销售跟进助手",
+    "filename": "07-sales-followup.yml",
+    "environmentKey": "DIFY_KEY_SALES_FOLLOWUP",
+    "example": {
+      "customer": "一家计划推出礼盒的电商品牌",
+      "record": "客户询问定制礼盒，预计首批 500 个；尚未确认尺寸。昨天发送了款式资料，客户说要与设计师讨论。",
+      "goal": "确认尺寸和打样需求"
+    }
+  },
+  {
+    "id": "meeting-notes",
+    "name": "会议纪要",
+    "filename": "08-meeting-notes.yml",
+    "environmentKey": "DIFY_KEY_MEETING_NOTES",
+    "example": {
+      "title": "新品上线准备会",
+      "record": "10 月 8 日会议。决定先上线黑色款，米白色款待实拍后再上。小林负责商品图，10 月 10 日提交。小周负责核对库存，周五前确认，具体日期待确认。详情页文案需要调整，但还没确定负责人。"
+    }
+  },
+  {
+    "id": "weekly-report",
+    "name": "工作周报",
+    "filename": "09-weekly-report.yml",
+    "environmentKey": "DIFY_KEY_WEEKLY_REPORT",
+    "example": {
+      "role": "内容运营",
+      "progress": "完成 6 条探店脚本，其中 4 条已拍摄；发布 3 条视频。整理了 20 个客户问题，客服回复模板完成初稿。",
+      "issues": "部分店铺资料缺少营业时间，等待负责人确认。下周计划完成剩余 2 条拍摄，并按客户问题修改客服模板。"
+    }
+  },
+  {
+    "id": "data-extractor",
+    "name": "资料信息提取",
+    "filename": "10-data-extractor.yml",
+    "environmentKey": "DIFY_KEY_DATA_EXTRACTOR",
+    "example": {
+      "fields": "商品名称、数量、单价、交付时间",
+      "source": "订单 A：黑色帆布包 30 个，单价 89 元，10 月 12 日交付。订单 B：米白色帆布包 20 个，单价还没确认，10 月 15 日交付。"
+    }
+  }
+]

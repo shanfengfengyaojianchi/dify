@@ -1,0 +1,419 @@
+[
+  {
+    "id": "store-script",
+    "name": "探店脚本",
+    "category": "内容创作",
+    "icon": "store",
+    "description": "把店铺特色变成可拍摄的口播与分镜。",
+    "output": "口播稿 · 分镜表",
+    "color": "orange",
+    "fields": [
+      {
+        "key": "store_name",
+        "label": "店铺名称",
+        "type": "text",
+        "required": true,
+        "placeholder": "例如：巷口咖啡"
+      },
+      {
+        "key": "highlights",
+        "label": "特色与已确认的信息",
+        "type": "textarea",
+        "required": true,
+        "placeholder": "主营产品、环境、价格、地址等，填写你确认过的资料"
+      },
+      {
+        "key": "audience",
+        "label": "目标人群",
+        "type": "text",
+        "required": true,
+        "placeholder": "例如：周边上班族"
+      },
+      {
+        "key": "duration",
+        "label": "视频时长",
+        "type": "select",
+        "required": true,
+        "placeholder": "",
+        "options": [
+          "30 秒",
+          "60 秒",
+          "90 秒"
+        ]
+      }
+    ],
+    "example": {
+      "store_name": "巷口咖啡",
+      "highlights": "社区咖啡店，窗边座位适合阅读；招牌桂花拿铁 28 元；提供外带。地址：青禾路 18 号。",
+      "audience": "周边上班族、喜欢安静空间的年轻人",
+      "duration": "60 秒"
+    },
+    "instruction": "根据店铺资料制作探店拍摄方案，按指定时长分配镜头。输出 3 个标题、完整口播稿、含时间段/画面/台词的分镜表及拍摄清单。不虚构体验、客流、评价、优惠和营业时间；价格地址只引用用户资料；未知项标记待确认。"
+  },
+  {
+    "id": "factory-script",
+    "name": "工厂宣传脚本",
+    "category": "内容创作",
+    "icon": "factory",
+    "description": "展示生产流程、产品与可验证的实力。",
+    "output": "宣传稿 · 分镜表",
+    "color": "blue",
+    "fields": [
+      {
+        "key": "factory_name",
+        "label": "工厂名称",
+        "type": "text",
+        "required": true,
+        "placeholder": "例如：青禾包装厂"
+      },
+      {
+        "key": "products",
+        "label": "主要产品",
+        "type": "text",
+        "required": true,
+        "placeholder": "产品类型、用途"
+      },
+      {
+        "key": "facts",
+        "label": "生产流程与已确认的优势",
+        "type": "textarea",
+        "required": true,
+        "placeholder": "设备、工序、质检、交付能力等"
+      },
+      {
+        "key": "audience",
+        "label": "视频面向谁",
+        "type": "text",
+        "required": true,
+        "placeholder": "例如：采购负责人"
+      }
+    ],
+    "example": {
+      "factory_name": "青禾包装厂",
+      "products": "定制纸箱、纸质礼盒",
+      "facts": "流程：设计打样、印刷、模切、粘盒、抽样质检。支持按客户图稿打样；设有独立质检环节。",
+      "audience": "电商品牌采购负责人"
+    },
+    "instruction": "制作约 60 秒的工厂宣传视频方案，输出标题、口播、含工序/镜头/时长的分镜表和拍摄准备。以实际工序说明价值，不虚构产能、认证、规模、客户、设备品牌、交期和质量保证。缺失的事实单列待确认。"
+  },
+  {
+    "id": "social-copy",
+    "name": "小红书文案",
+    "category": "内容创作",
+    "icon": "notebook",
+    "description": "从产品资料生成标题、正文和话题。",
+    "output": "标题 · 正文 · 标签",
+    "color": "pink",
+    "fields": [
+      {
+        "key": "product",
+        "label": "产品或主题",
+        "type": "text",
+        "required": true,
+        "placeholder": "例如：通勤帆布包"
+      },
+      {
+        "key": "facts",
+        "label": "产品资料",
+        "type": "textarea",
+        "required": true,
+        "placeholder": "材质、用途、售价、卖点等"
+      },
+      {
+        "key": "audience",
+        "label": "目标读者",
+        "type": "text",
+        "required": true,
+        "placeholder": "例如：学生、职场新人"
+      },
+      {
+        "key": "tone",
+        "label": "表达风格",
+        "type": "select",
+        "required": true,
+        "placeholder": "",
+        "options": [
+          "自然分享",
+          "实用攻略",
+          "专业介绍"
+        ]
+      }
+    ],
+    "example": {
+      "product": "通勤帆布包",
+      "facts": "棉帆布材质，有拉链和内袋，可放 13 英寸电脑；售价 89 元；米白、黑色两款。",
+      "audience": "学生和职场新人",
+      "tone": "实用攻略"
+    },
+    "instruction": "生成 5 个不同角度的标题、一篇约 300 字的正文和 5 个相关标签，符合指定风格。写成基于资料的介绍，不冒充真实购买体验，不编造测评或评价，不使用保证性效果宣传。标出发表前需要补充的实拍或事实。"
+  },
+  {
+    "id": "video-topics",
+    "name": "短视频选题",
+    "category": "内容创作",
+    "icon": "clapperboard",
+    "description": "为业务准备 10 个有拍摄方向的选题。",
+    "output": "选题表 · 开头文案",
+    "color": "orange",
+    "fields": [
+      {
+        "key": "industry",
+        "label": "行业与业务",
+        "type": "text",
+        "required": true,
+        "placeholder": "例如：社区咖啡店"
+      },
+      {
+        "key": "audience",
+        "label": "目标人群",
+        "type": "text",
+        "required": true,
+        "placeholder": "希望谁看到这些视频"
+      },
+      {
+        "key": "goal",
+        "label": "内容目标",
+        "type": "select",
+        "required": true,
+        "placeholder": "",
+        "options": [
+          "介绍产品",
+          "回答常见问题",
+          "展示专业能力",
+          "吸引到店"
+        ]
+      },
+      {
+        "key": "resources",
+        "label": "可用素材与限制",
+        "type": "textarea",
+        "required": true,
+        "placeholder": "能拍什么、有哪些资料、不能涉及什么"
+      }
+    ],
+    "example": {
+      "industry": "社区咖啡店",
+      "audience": "附近上班族",
+      "goal": "吸引到店",
+      "resources": "可拍咖啡制作、店内环境和菜单；员工可出镜；不拍顾客正脸，不编造优惠。"
+    },
+    "instruction": "输出 10 个不同角度的短视频选题，表格列出选题/目标需求/前 3 秒开头/核心镜头/行动建议。尊重可用素材和限制，不保证流量或成交，不编造热点、折扣和测评结果。挑出适合先拍的 3 项并解释依据。"
+  },
+  {
+    "id": "product-benefits",
+    "name": "商品卖点提炼",
+    "category": "营销销售",
+    "icon": "package",
+    "description": "把产品参数转成客户能理解的价值。",
+    "output": "卖点表 · 详情页文案",
+    "color": "blue",
+    "fields": [
+      {
+        "key": "product",
+        "label": "商品名称",
+        "type": "text",
+        "required": true,
+        "placeholder": "例如：折叠电脑支架"
+      },
+      {
+        "key": "specs",
+        "label": "商品参数与资料",
+        "type": "textarea",
+        "required": true,
+        "placeholder": "材质、尺寸、功能、价格等实际信息"
+      },
+      {
+        "key": "needs",
+        "label": "客户需求",
+        "type": "textarea",
+        "required": true,
+        "placeholder": "客户在什么场景使用，有什么困扰"
+      }
+    ],
+    "example": {
+      "product": "折叠电脑支架",
+      "specs": "铝合金材质；6 档调节；折叠厚度 2 厘米；重 260 克；适配 11–15.6 英寸笔记本。",
+      "needs": "经常带电脑出差，希望支架方便收纳，办公时调整屏幕高度。"
+    },
+    "instruction": "输出参数/客户需求/可支持的卖点对应表，选出 3 个核心卖点，撰写详情页标题、短介绍和使用场景。区分事实与推测，禁止补造参数、性能测试、销量和认证，不作医疗功效或绝对性承诺。"
+  },
+  {
+    "id": "customer-reply",
+    "name": "客服回复助手",
+    "category": "营销销售",
+    "icon": "messages",
+    "description": "根据问题与售后规则拟定回复。",
+    "output": "回复草稿 · 待确认事项",
+    "color": "teal",
+    "fields": [
+      {
+        "key": "question",
+        "label": "客户问题",
+        "type": "textarea",
+        "required": true,
+        "placeholder": "粘贴客户的问题"
+      },
+      {
+        "key": "policy",
+        "label": "适用规则与订单事实",
+        "type": "textarea",
+        "required": true,
+        "placeholder": "退换货规则、物流状态等；去掉无关个人信息"
+      },
+      {
+        "key": "tone",
+        "label": "回复语气",
+        "type": "select",
+        "required": true,
+        "placeholder": "",
+        "options": [
+          "友好简洁",
+          "耐心解释",
+          "正式专业"
+        ]
+      }
+    ],
+    "example": {
+      "question": "包裹到了，但颜色不是我下单选的，怎么办？",
+      "policy": "已确认订单为黑色，客户提供照片为米白色。发错货支持换货，商家承担运费；换货安排需要客服核实库存。",
+      "tone": "友好简洁"
+    },
+    "instruction": "归纳客户诉求，输出回复草稿、处理步骤和待确认事项。严格依据规则和订单事实，不承诺未授权退款、赔偿、金额或时效；信息不足说明核实方向。只拟定回复，不表示已发送或执行售后。"
+  },
+  {
+    "id": "sales-followup",
+    "name": "销售跟进助手",
+    "category": "营销销售",
+    "icon": "handshake",
+    "description": "从沟通记录整理下一步跟进。",
+    "output": "跟进话术 · 行动建议",
+    "color": "orange",
+    "fields": [
+      {
+        "key": "customer",
+        "label": "客户背景",
+        "type": "text",
+        "required": true,
+        "placeholder": "例如：寻找包装供应商的品牌"
+      },
+      {
+        "key": "record",
+        "label": "沟通记录",
+        "type": "textarea",
+        "required": true,
+        "placeholder": "已沟通的需求、反馈、时间和承诺"
+      },
+      {
+        "key": "goal",
+        "label": "本次跟进目标",
+        "type": "text",
+        "required": true,
+        "placeholder": "例如：确认样品需求"
+      }
+    ],
+    "example": {
+      "customer": "一家计划推出礼盒的电商品牌",
+      "record": "客户询问定制礼盒，预计首批 500 个；尚未确认尺寸。昨天发送了款式资料，客户说要与设计师讨论。",
+      "goal": "确认尺寸和打样需求"
+    },
+    "instruction": "输出客户阶段判断及依据、一条微信跟进草稿、一封短邮件、下一步行动清单。尊重客户进度，不制造紧迫感、不虚构库存折扣、价格或合同承诺。日期时间未知标为待商定，不表示已联系客户。"
+  },
+  {
+    "id": "meeting-notes",
+    "name": "会议纪要",
+    "category": "办公效率",
+    "icon": "clipboard",
+    "description": "把会议记录整理成决策与待办。",
+    "output": "摘要 · 决策 · 待办表",
+    "color": "blue",
+    "fields": [
+      {
+        "key": "title",
+        "label": "会议主题",
+        "type": "text",
+        "required": true,
+        "placeholder": "例如：新品上线准备会"
+      },
+      {
+        "key": "record",
+        "label": "会议文字记录",
+        "type": "textarea",
+        "required": true,
+        "placeholder": "粘贴会议记录或转写文本"
+      }
+    ],
+    "example": {
+      "title": "新品上线准备会",
+      "record": "10 月 8 日会议。决定先上线黑色款，米白色款待实拍后再上。小林负责商品图，10 月 10 日提交。小周负责核对库存，周五前确认，具体日期待确认。详情页文案需要调整，但还没确定负责人。"
+    },
+    "instruction": "输出会议摘要、已明确决策、待办表（任务/负责人/截止时间/依据）、未解决问题。不把提议当决策，不补造参会人员、负责人或时间。相对时间无法确定则保留原话并标注待确认，保留记录中的分歧。"
+  },
+  {
+    "id": "weekly-report",
+    "name": "工作周报",
+    "category": "办公效率",
+    "icon": "chart",
+    "description": "用实际进度整理成果、问题和计划。",
+    "output": "本周成果 · 下周计划",
+    "color": "teal",
+    "fields": [
+      {
+        "key": "role",
+        "label": "岗位或项目",
+        "type": "text",
+        "required": true,
+        "placeholder": "例如：内容运营"
+      },
+      {
+        "key": "progress",
+        "label": "本周工作与进度",
+        "type": "textarea",
+        "required": true,
+        "placeholder": "已完成事项、数据和进行中的任务"
+      },
+      {
+        "key": "issues",
+        "label": "问题与下周计划",
+        "type": "textarea",
+        "required": true,
+        "placeholder": "遇到的阻碍、需要的支持、下周安排"
+      }
+    ],
+    "example": {
+      "role": "内容运营",
+      "progress": "完成 6 条探店脚本，其中 4 条已拍摄；发布 3 条视频。整理了 20 个客户问题，客服回复模板完成初稿。",
+      "issues": "部分店铺资料缺少营业时间，等待负责人确认。下周计划完成剩余 2 条拍摄，并按客户问题修改客服模板。"
+    },
+    "instruction": "生成周报，分为本周完成、进行中、问题与支持、下周计划。保留原始数据和进度，禁止将草稿写成完成、编造增长或成果。突出具体交付物，目标与实际完成明确区分。"
+  },
+  {
+    "id": "data-extractor",
+    "name": "资料信息提取",
+    "category": "办公效率",
+    "icon": "table",
+    "description": "按指定字段把业务文字整理成表格。",
+    "output": "结构化表格 · CSV",
+    "color": "teal",
+    "fields": [
+      {
+        "key": "fields",
+        "label": "需要提取的字段",
+        "type": "text",
+        "required": true,
+        "placeholder": "例如：商品名称、数量、单价、交付时间"
+      },
+      {
+        "key": "source",
+        "label": "原始资料",
+        "type": "textarea",
+        "required": true,
+        "placeholder": "粘贴订单、产品资料或业务记录"
+      }
+    ],
+    "example": {
+      "fields": "商品名称、数量、单价、交付时间",
+      "source": "订单 A：黑色帆布包 30 个，单价 89 元，10 月 12 日交付。订单 B：米白色帆布包 20 个，单价还没确认，10 月 15 日交付。"
+    },
+    "instruction": "按用户指定字段逐条提取。只返回 JSON 对象，格式为 {\"columns\":[\"字段名\"],\"rows\":[[\"单元格文本\"]]}，不要代码围栏。单元格为字符串，缺失填待确认，不猜测价格、数量、日期，不合并不同记录。不计算未要求的总额。"
+  }
+]
